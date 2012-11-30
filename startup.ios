@@ -1,0 +1,35 @@
+#ignore_error
+
+using Bootes.Boot;
+using Bootes.Devices.Disk;
+
+//
+// Rename partitions
+//
+RenamePartition("fd0","Floppy");
+
+RenamePartition("hd0,0","Data");
+RenamePartition("hd0,1","Testing");
+RenamePartition("hd0,2","WinVi");
+
+RenamePartition("hd1,0","Download");
+RenamePartition("hd1,1","Win");
+RenamePartition("hd1,2","Games");
+RenamePartition("hd1,3","Gentoo");
+RenamePartition("hd1,4","SWAP");
+
+
+//
+// Setup boot entries
+//
+AddOSEntry("Windows XP");
+SetBootstrap("Windows XP","Win");
+
+AddOSEntry("Multiboot sample");
+SetBootstrap("Multiboot sample","(Floppy)\bootes\mboot.bin");
+
+
+//
+// Start boot interface ( Default:0, Timeout:10sec )
+//
+BootTextInterface(0,10);

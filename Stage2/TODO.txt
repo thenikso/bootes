@@ -1,0 +1,8 @@
+Memory:
+- Setup: completare creazione primo blocco libero
+- Alloc,...: redesign e rifare
+	blocco = { Size, Status }
+
+Process:
+
+Scheduler:
