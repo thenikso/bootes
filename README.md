@@ -61,3 +61,6 @@ The building process is described in `Makefile.bat` for a Windows console, it's 
 - `fasm Stage2\Stage2.asm bin\objects\Stage2` to build the Stage2
 - `fasm Stage1\Loaders\Stage1.Loader.FAT32.asm bin\objects\Stage1.Loader.FAT32` to build something unknown
 - `copy bin\objects\Stage1/b + bin\objects\Stage2/b  bin\Bootes.img` Windows command to concatenate 2 files using binary mode to read them
+
+## License
+MIT License
