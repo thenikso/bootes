@@ -33,6 +33,8 @@ If for some reason you still have a hardware floppy disk reader, you can create 
 
 At this point you should have a bootable floppy disk. If left inserted when rebooting the machine, Bootes should run.
 
+It should also be possible to install Bootes on a FAT32 formatted hard disk but instructions for that should be reconstructed.
+
 ## What to do in Bootes
 Once in Bootes you should be presented with a prompt. Bootes uses name spaced commands and has **tab completion**!
 You can also use the `tab` key to cycle through all sub-namespaces.
@@ -52,6 +54,8 @@ iOS.IO.Console.Write( myvar )
 
 To shutdown the machine:
 - `iOS.Machine.Shutdown()` or `iOS.Machine.Reboot()`
+
+There may be more secrets in Bootes like a bare-bone graphical interface and the actual ability to boot something. The mysterious `startup.ios` file was also used for something. More instructions may be added in the future.
 
 ## Building Bootes
 To build Bootes you need [FASM](http://flatassembler.net). There is also a working [OS X FASM](http://board.flatassembler.net/topic.php?t=13413&start=20) version in the FASM message board (by Zab, you'll need to register to the board to download the file).
