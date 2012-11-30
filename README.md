@@ -1,5 +1,5 @@
 # Bootes
-Bootes is a **16 bit operating system** that was intended to become a scriptable boot loader similar to [GRUB](http://www.gnu.org/software/grub/).
+Bootes is a **16 bit operating system** written in **x86 assembler** that was intended to become a scriptable boot loader similar to [GRUB](http://www.gnu.org/software/grub/).
 
 ## History
 The project started out of curiosity and ended up becoming a bachelor degree thesys.
