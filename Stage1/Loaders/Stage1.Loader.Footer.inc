@@ -1,5 +1,5 @@
 ;::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-; Footer di un loader.
+; Footer of a loader.
 ;::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Bootes.Stage1.Loader.Footer:
@@ -21,8 +21,8 @@ times 512-(Bootes.Stage1.Loader.Footer.End-.PrintError)-($-Bootes.Stage1.Loader.
 					DB " Stage1 is needed for boot this partition!",0
 
 Bootes.Stage1.Loader.Print:
-	MOV AH,0x0E		; Per chiamare la funzione di sctrittura carattere tramite int 0x10
-	MOV BX,0x0007	; Imposta lo sfondo del carattere
+	MOV AH,0x0E		; To call the write character function with `int 0x10`
+	MOV BX,0x0007	; Set the character background
 	.lPrint:
 		LODSB
 		OR AL,AL
